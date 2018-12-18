@@ -31,7 +31,12 @@ was shown that each class has exactly 2160 instances in the training data. Null 
 found. Constant features were then checked for. Soil Type 7 and 15 were shown to be constant features and as such were dropped
 from the data.
 
-A correlation heatmap was plotted in order to check if any features were highly correlated. The heatmap is shown below:
+A correlation heatmap was plotted for the non-categorical features in order to check if any features were highly correlated. The heatmap is shown below:
 
+<a href="url"><img src="https://user-images.githubusercontent.com/31149320/50188150-8fd3b880-02ee-11e9-9d46-b00390d2c62f.png" align="center" height="560" width="700" ></a>
+
+As shown above, Hillshade_9am and Hillshade_3pm, Hillshade_noon and Slope, and Aspect and Hillshade_9am, Horizontal_Distance_To_Hydrology and Vertical_Distance_To_Hydrology, Aspect and Hillshade_3pm, Hillshade_noon and Hillshade_3pm, and Elevation and Horizontal_Distance_To_Roadways all displayed fairly strong correlations. This information could have been used to perform feature selection come modeling time.
+
+The relationships between Wilderness Area, Soil Type and Cover Type were then plotted on histograms to examine the class distribution for these features. The plots are shown below:
 
 
