@@ -64,7 +64,7 @@ Preprocessing was then performed on the non-categorical featuress up to Wilderne
 
 ## Models & Algorithms
 
-## k-Nearest Neighbors
+### k-Nearest Neighbors
 
 k-Nearest Neighbors was the first algorithm implemented for prediction. The KNeighborsClassifier class from sklearn was used for this. Hyperparameter selection was made using a 5-fold cross validation study. Three parameters were considered for the study: number of neighbors, distance metric, and weighting metric. The final parameters were chosen to be 3 neighbors, euclidean distance, and a distance weight metric based on the cross validation results. An accuracy of 76.83 % was achieved. The resulting confusion matrix from a 5-fold cross validation run is shown below:
 
@@ -75,7 +75,7 @@ k-Nearest Neighbors was the first algorithm implemented for prediction. The KNei
   <em>k-Nearest Neighbors Confusion Matrix</em>
 </p>
 
-## Logistic Regression
+### Logistic Regression
 
 Logistic Regression was then implemented by also utilizing the respective sklearn class. Only the penalty and C value hyperparameters were tuned for this study. Hyperparameter selection was performed in the same way as in k-Nearest Neighbors and the best parameters were shown to be a C value of 10 with a 'l1' penalty scheme. An accuracy of 68.44 % was achieved. The resulting confusion matrix from a 5-fold cross validation run is shown below:
 
@@ -86,7 +86,7 @@ Logistic Regression was then implemented by also utilizing the respective sklear
   <em>Logistic Regression Confusion Matrix</em>
 </p>
 
-## Support Vector Machine
+### Support Vector Machine
 
 Support Vector Machines are a very popular and succesful machine learning algorithm and as such we were very optimistic in utilizing them on the dataset. Similar to both Logistic Regression and k-Nearest Neighbors, 5-fold cross validation was used to perform hyperparameter selection. The hyperparameters considered where the penalty value of C, the kernel (gaussian or poly), and the degree (only applicable to poly kernel). The final parameters selected where a hard-margin penalty value of 1e5 along with the gaussian kernel as this combination performed the best in validation. An accuracy of 76.11 % was achieved. The resulting confusion matrix from a 5-fold cross validation run is shown below:
 
@@ -97,7 +97,7 @@ Support Vector Machines are a very popular and succesful machine learning algori
   <em>Support Vector Machine Confusion Matrix</em>
 </p>
 
-## Neural Network
+### Neural Network
 
 Based on the success of neural networks and their increasing popularity in recent times, neural networks were also chosen as a potential model to test on the dataset. The neural network was implemented using keras and computations were made with the help of a GPU running nVIDIA's CUDA technology. A two layer neural network with one hidden layer model utilizing cross-entropy loss and the adam optimizer was considered for this study. A model of the network is shown below:
 
