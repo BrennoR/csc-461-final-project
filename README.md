@@ -33,7 +33,12 @@ from the data. The first column on the data was also dropped as it simply contai
 
 A correlation heatmap was plotted for the non-categorical features in order to check if any features were highly correlated. The heatmap is shown below:
 
-<a href="url"><img src="https://user-images.githubusercontent.com/31149320/50188150-8fd3b880-02ee-11e9-9d46-b00390d2c62f.png" align="center" height="560" width="700" ></a>
+<p align="center">
+  <img height="560" width="700" src="https://user-images.githubusercontent.com/31149320/50188150-8fd3b880-02ee-11e9-9d46-b00390d2c62f.png">
+</p>
+<p align="center">
+  <em>Correlation Heat Map</em>
+</p>
 
 As shown above, Hillshade_9am and Hillshade_3pm, Hillshade_noon and Slope, and Aspect and Hillshade_9am, Horizontal_Distance_To_Hydrology and Vertical_Distance_To_Hydrology, Aspect and Hillshade_3pm, Hillshade_noon and Hillshade_3pm, and Elevation and Horizontal_Distance_To_Roadways all displayed fairly strong correlations. This information could have been used to perform feature selection come modeling time.
 
@@ -42,9 +47,15 @@ The relationships between Wilderness Area, Soil Type and Cover Type were then pl
 <p align="center">
   <img src="https://user-images.githubusercontent.com/31149320/50188664-556b1b00-02f0-11e9-960f-6ff46d0cc5a2.png">
 </p>
+<p align="center">
+  <em>Soil Type vs. Cover Type</em>
+</p>
 
 <p align="center">
   <img width="448" height="360" src="https://user-images.githubusercontent.com/31149320/50188678-5e5bec80-02f0-11e9-8788-de242d1c3f0d.png">
+</p>
+<p align="center">
+  <em>Wilderness Area vs. Cover Type</em>
 </p>
 
 As shown above, some classes have great distinction with different Soil Types and Wilderness Areas while others not so much.
@@ -60,6 +71,9 @@ k-Nearest Neighbors was the first algorithm implemented for prediction. The KNei
 <p align="center">
   <img width="500" height="383" src="https://user-images.githubusercontent.com/31149320/50190169-1fc93080-02f6-11e9-8f70-dd26ab84ce51.png">
 </p>
+<p align="center">
+  <em>k-Nearest Neighbors Confusion Matrix</em>
+</p>
 
 ## Logistic Regression
 
@@ -67,6 +81,9 @@ Logistic Regression was then implemented by also utilizing the respective sklear
 
 <p align="center">
   <img width="500" height="383" src="https://user-images.githubusercontent.com/31149320/50190170-1fc93080-02f6-11e9-9238-d39f52b99ac3.png">
+</p>
+<p align="center">
+  <em>Logistic Regression Confusion Matrix</em>
 </p>
 
 ## Support Vector Machine
@@ -76,6 +93,9 @@ Support Vector Machines are a very popular and succesful machine learning algori
 <p align="center">
   <img width="500" height="383" src="https://user-images.githubusercontent.com/31149320/50190173-1fc93080-02f6-11e9-812a-ee64f40f9bfd.png">
 </p>
+<p align="center">
+  <em>Support Vector Machine Confusion Matrix</em>
+</p>
 
 ## Neural Network
 
@@ -84,11 +104,17 @@ Based on the success of neural networks and their increasing popularity in recen
 <p align="center">
   <img width="377" height="335" src="https://user-images.githubusercontent.com/31149320/50190172-1fc93080-02f6-11e9-9753-bfd45afd5802.png">
 </p>
+<p align="center">
+  <em>Neural Network Structure</em>
+</p>
 
 The only parameters considered for the neural network in this study were the number of nodes in the hidden layer and the batch size used with the adam optimizer. Many tests were run varying these parameters and a batch size of 32 with a hidden layer size of 50 were chosen for the final network configuration. An accuracy of 81.35 % was achieved. The resulting confusion matrix obtained from the validation set is shown below:
 
 <p align="center">
   <img width="500" height="383" src="https://user-images.githubusercontent.com/31149320/50190171-1fc93080-02f6-11e9-80e4-34570e329552.png">
+</p>
+<p align="center">
+  <em>Neural Network Confusion Matrix</em>
 </p>
 
 ## Test Submission and Conclusion
