@@ -1,7 +1,7 @@
 # CSC 461 (Machine Learning) - Final Project
 
 This was the final project for the CSC461 machine learning course at URI. We were tasked to apply machine learning algorithms 
-to a dataset of our choice on Kaggle. My group decided on the [Forest Cover Type Prediction Competition](https://www.kaggle.com/c/forest-cover-type-prediction) 
+to a dataset of our choice on Kaggle. Our group decided on the [Forest Cover Type Prediction Competition](https://www.kaggle.com/c/forest-cover-type-prediction) 
 as it seemed a decent level task for our experience at the time.
 We decided on utilizing four different machine learning algorithms and seeing how well they perform on this dataset.
 The four algorithms/models chosen were: k-Nearest Neighbors, Logistic Regression, Support Vector Machines, and a Neural
